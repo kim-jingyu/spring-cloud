@@ -30,6 +30,10 @@ dependencies {
 	implementation 'io.micrometer:micrometer-tracing-bridge-otel'
 	implementation 'io.opentelemetry:opentelemetry-exporter-zipkin'
 
+	// feign-micrometer => Integrate Micrometer for Feign Requests
+	// Enables tracing of REST API calls made using Feign
+	implementation 'io.github.openfeign:feign-micrometer'
+
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
